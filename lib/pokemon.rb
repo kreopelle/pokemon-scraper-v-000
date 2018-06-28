@@ -3,15 +3,16 @@ require 'pry'
 class Pokemon
   attr_accessor :id, :name, :type, :db, :hp
 
-  def initialize(id:, name:, type:, db:)
+  def initialize(id:, name:, type:, hp:, db:)
     self.id = id
     self.name = name
     self.type = type
+    self.type
     self.db = db
   end
 
 
-  def self.save(name, type, hp = 60, db)
+  def self.save(name, type, hp, db)
     db.execute("INSERT INTO pokemon (name, type) VALUES (?, ?)", name, type, hp)
   end
 
