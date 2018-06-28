@@ -22,8 +22,8 @@ class Pokemon
 
      info = db.execute(sql, id)
 
-     self.new(info[0], info[1], info[2], db)
-     
+     self.new(info)
+
    end
 
 end
