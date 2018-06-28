@@ -22,7 +22,7 @@ class Pokemon
 
      info = db.execute(sql, id)
 
-     self.new(info)
+     Pokemon.new(info)
 
    end
 
