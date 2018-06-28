@@ -16,11 +16,7 @@ class Pokemon
   end
 
   def self.find(id_num, db)
-	   sql = <<-SQL
-		   SELECT * FROM pokemon WHERE id = (?)
-	   SQL
-
-     info = db.execute(sql, id_num).flatten
+     info = db.execute("SELECT * FROM pokemon WHERE id=(?)", id_num).flatten
 
      Pokemon.save(info[1], info[2], db)
 
