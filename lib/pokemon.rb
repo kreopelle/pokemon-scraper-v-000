@@ -20,6 +20,8 @@ class Pokemon
      Pokemon.new(id:info[0], name:info[1], type:info[2], db:db)
    end
 
-   def 
+   def bonus
+     
+   end 
 
 end
