@@ -21,8 +21,8 @@ class Pokemon
      Pokemon.new(id:info[0], name:info[1], type:info[2], db:db)
    end
 
-   def bonus
-
+   def bonus(id, hp, db)
+     hp_adjust = db.execute("UPDATE pokemon SET id =?")
    end
 
 end
