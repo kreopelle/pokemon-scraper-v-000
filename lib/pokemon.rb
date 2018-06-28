@@ -22,7 +22,7 @@ class Pokemon
    end
 
    def bonus(id, hp, db)
-     hp_adjust = db.execute("UPDATE pokemon SET id =?")
+     hp_adjust = db.execute("UPDATE pokemon SET hp=? WHERE id=?")
    end
 
 end
