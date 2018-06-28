@@ -23,7 +23,6 @@ class Pokemon
 
   def alter_hp(new_hp)
     self.hp = new_hp
-
   end
 
 end
